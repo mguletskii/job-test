@@ -17,3 +17,10 @@ spec:
         name: test-app1
         command: [ "/bin/sh", "-c", "--" ]
         args: [ "while true; do sleep 30; done;" ]
+      initContainers:
+      - name: job-done
+        image: groundnuty/k8s-wait-for
+        imagePullPolicy: IfNotPresent
+        args:
+          - "job"
+          - "failed-job"
