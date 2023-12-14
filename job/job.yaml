@@ -1,0 +1,17 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: failed-job
+spec:
+  backoffLimit: 5
+  activeDeadlineSeconds: 100
+  template:
+    spec:
+      containers:
+      - name: busybox
+        image: busybox
+        command: 
+          - /bin/sh 
+          - -c 
+          - "exit 1"
+      restartPolicy: Never
