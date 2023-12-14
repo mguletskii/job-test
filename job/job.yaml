@@ -16,4 +16,4 @@ spec:
           - /bin/sh 
           - -c 
           - "exit 1"
-      restartPolicy: OnFailure
+      restartPolicy: Never
