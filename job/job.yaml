@@ -14,5 +14,5 @@ spec:
         command: 
           - /bin/sh 
           - -c 
-          - "exit 0"
+          - "exit 1"
       restartPolicy: Never
