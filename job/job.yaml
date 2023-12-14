@@ -4,10 +4,8 @@ metadata:
   name: failed-job
   annotations:
     argocd.argoproj.io/hook: Sync
-    argocd.argoproj.io/sync-options: Delete=false
 spec:
   backoffLimit: 2
-  activeDeadlineSeconds: 20
   template:
     spec:
       containers:
