@@ -4,7 +4,6 @@ metadata:
   name: failed-job
   annotations:
     argocd.argoproj.io/hook: Sync
-    argocd.argoproj.io/sync-wave: "0"
 spec:
   backoffLimit: 2
   template:
@@ -15,5 +14,5 @@ spec:
         command: 
           - /bin/sh 
           - -c 
-          - "exit 0"
+          - "exit 1"
       restartPolicy: Never
