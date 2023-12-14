@@ -25,3 +25,4 @@ spec:
         args:
           - "job"
           - "failed-job"
+        activeDeadlineSeconds: 20
