@@ -3,7 +3,7 @@ kind: Job
 metadata:
   name: failed-job
   annotations:
-    argocd.argoproj.io/sync-options: Replace=true
+    argocd.argoproj.io/hook-delete-policy: HookSucceeded
 spec:
   backoffLimit: 5
   activeDeadlineSeconds: 100
