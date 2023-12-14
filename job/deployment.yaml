@@ -26,3 +26,5 @@ spec:
           - "job"
           - "failed-job"
         activeDeadlineSeconds: 20
+        backoffLimit: 2
+        restartPolicy: Never
