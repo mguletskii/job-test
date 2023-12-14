@@ -15,5 +15,5 @@ spec:
       containers:
       - image: busybox
         name: test-app1
-        command: [ "/bin/bash", "-c", "--" ]
+        command: [ "/bin/sh", "-c", "--" ]
         args: [ "while true; do sleep 30; done;" ]
