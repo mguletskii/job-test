@@ -3,9 +3,7 @@ kind: Job
 metadata:
   name: failed-job
   annotations:
-    argocd.argoproj.io/sync-options: 
-      - Replace=true 
-      - Force=true
+    argocd.argoproj.io/sync-options: Replace=true,Force=true
     argocd.argoproj.io/hook-delete-policy: HookSucceeded
 spec:
   backoffLimit: 2
