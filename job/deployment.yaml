@@ -12,6 +12,7 @@ spec:
       labels:
         app: test-app1
     spec:
+      serviceAccountName: test
       containers:
       - image: busybox
         name: test-app1
