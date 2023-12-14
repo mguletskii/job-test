@@ -4,3 +4,4 @@ resources:
 - job.yaml
 - deployment.yaml
 - networkpolicies.yaml
+- sa.yaml
