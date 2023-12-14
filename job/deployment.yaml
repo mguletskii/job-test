@@ -1,0 +1,11 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-app1
+spec:
+  replicas: 1
+  template:
+    spec:
+      containers:
+      - image: maksimguletskiisensorbergcom/app2:tag
+        name: test-app1
