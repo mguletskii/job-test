@@ -13,5 +13,7 @@ spec:
         app: test-app1
     spec:
       containers:
-      - image: maksimguletskiisensorbergcom/app2:tag
+      - image: busybox
         name: test-app1
+        command: [ "/bin/bash", "-c", "--" ]
+        args: [ "while true; do sleep 30; done;" ]
