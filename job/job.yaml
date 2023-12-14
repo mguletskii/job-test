@@ -4,7 +4,6 @@ metadata:
   name: failed-job
   annotations:
     argocd.argoproj.io/hook: Sync
-    argocd.argoproj.io/hook-delete-policy: HookFailed
 spec:
   backoffLimit: 2
   activeDeadlineSeconds: 20
